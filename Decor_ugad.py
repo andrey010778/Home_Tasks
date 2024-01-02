@@ -30,4 +30,4 @@ while True:
     if otvet == n_comp:
         break
 
-print(f'Правильно! Число попыток отгадывания:', check_numder.count)
+print('Правильно! Число попыток отгадывания:', check_numder.count)
