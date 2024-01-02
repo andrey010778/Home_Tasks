@@ -1,7 +1,6 @@
 from random import randint
 
 n_comp = randint(1, 100)
-print(n_comp)
 print('Компьютер "загадал" число в интервале от 1 до 100. Какое?')
 
 
