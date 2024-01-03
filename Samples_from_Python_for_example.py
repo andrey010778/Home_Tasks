@@ -1,0 +1,13 @@
+'''034'''
+import math
+
+print("1) Square")
+print("2) Triangle")
+print()
+menuselection = int(input("Enter a number: "))
+if menuselection == 1:
+    side = int(input("Enter the length of one side: "))
+    area = side * side
+    print ("The area of your chosen shape is ", area)
+elif menuselection == 2:
+    base = int(input(Enter the length ))
