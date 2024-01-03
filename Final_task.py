@@ -17,7 +17,7 @@ def selection():
 
 selection()
 
-
+''' Упёрся в вызов функции'''
 
 
 
