@@ -1,7 +1,109 @@
+'''109'''
+
+print("1) Create a new file")
+print("2) Display the file")
+print("3) Add a new item to the file")
+selection = int(input("Make a selection 1, 2, or 3:"))
+if selection == 1:
+    subject = input("Enter a school subject: ")
+    file = open("Subject.txt", "w")
+    file.write(subject + "\n")
+    file.close()
+elif selection == 2:
+    file = open("Subject.txt", "r")
+    print(file.read())
+elif selection == 3:
+    file = open("Subject.txt", "a")
+    subject = input("Enter a school subject: ")
+    file.write(subject + "\n")
+    file.close()
+    file = open("Subject.txt", "r")
+    print(file.read())
+else:
+    print("Invalid option")
+
+
+
+'''105-108
+
+file = open("Names.txt", "w")
+file.write("Bob\n")
+file.write("Tom\n")
+file.write("Gemma\n")
+file.write("Sarah\n")
+file.write("Timothy\n")
+file.close()
+file = open("Names.txt", "r")
+print(file.read())
+file.close()
+file = open("Names.txt", "a")
+newname = input("Enter a new name: ")
+file.write(newname + "\n")
+file.close()
+
+file = open("Names.txt", "r")
+print(file.read())
+file.close()'''
+
+''' Комменды при создании чтении и закрытии файла
+file = open("Countries.txt", "w")
+file.write("Italy\n")
+file.write("Germany\n")
+file.write("Spain\n")
+file.close()
+file = open("Countries.txt", "r")
+print(file.read())
+file = open("Countries.txt", "a")
+file.write("France\n")
+file.close()'''
+
+
+
+'''103-104
+
+
+list = {}
+for i in range(0, 4):
+    name = input("Enter namer: ")
+    age = int(input("Enter age: "))
+    shoe = int(input("Shoe size: "))
+    list[name] = {"Age": age, "Shoe size": shoe}
+
+getrid = input("Who do you want to remove from the list?")
+del list[getrid]
+for name in list:
+    print((name), list[name]["Age"], list[name]["Shoe size"]) '''
+
+'''100-101
+
+sales = {"John": {"N": 3056, "S": 8463, "E": 8441, "W":2694},
+"Tom": {"N": 4832, "S": 6786, "E": 4737, "W": 3612},
+"Anne": {"N": 5239, "S": 4802, "E": 5820, "W": 1859},
+"Fiona": {"N": 3904, "S": 3645, "E": 8821, "W": 2451}}
+person = input("Enter sales person's name: ")
+region = input("Select region: ")
+print(sales[person][region])
+newdata = int(input("Enter a new data: "))
+sales[person][region] = newdata
+print(sales[person])'''
 
 
 
 
+
+
+'''096 - 099
+
+list = [[2, 5, 8], [3, 7, 4], [1, 6, 9], [4, 2, 0]]
+row = int(input("Select a row: "))
+print(list[row])
+col = int(input("Select a column: "))
+print(list[row][col])
+change = input("Do you want to cahnge the value? y/n?")
+if change == "y":
+    newvalue = int(input("Enter new value: "))
+    list[row][col] = newvalue
+print(list[row])'''
 
 '''087 Прикольная задача на вывод из списка в обратном порядке
 
